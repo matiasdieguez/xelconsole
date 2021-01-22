@@ -1,0 +1,26 @@
+name: .NET
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore src/XelConsole.csproj
+    - name: Build
+      run: dotnet build --no-restore src/XelConsole.csproj
+    - name: Publish for osx
+      run: dotnet publish -r osx-x64 -c Release /p:PublishSingleFile=true src/XelConsole.csproj
+
