@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>xelconsole</AssemblyName>
+    <RootNamespace>XelConsole</RootNamespace>
+    <TargetFramework>net5.0</TargetFramework>
+    <Copyright>Copyright © 2020 Matías Dieguez https://matiasdieguez.com/</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+    <PackageReference Include="Microsoft.SqlServer.XEvent.XELite" Version="2021.1.14.8" />
+  </ItemGroup>
+
+</Project>
