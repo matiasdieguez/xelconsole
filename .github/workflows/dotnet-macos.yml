@@ -18,9 +18,9 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore src/XelConsole.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore src/XelConsole.csproj
     - name: Publish for osx
-      run: dotnet publish -r osx-x64 -c Release /p:PublishSingleFile=true
+      run: dotnet publish -r osx-x64 -c Release /p:PublishSingleFile=true src/XelConsole.csproj
 
