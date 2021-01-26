@@ -9,6 +9,9 @@ Converts XEL files to json, html or txt formats to simplify cross-platform viewi
 https://github.com/matiasdieguez/xelconsole/releases
 
 # Usage
+```
+  xelconsole -i example.xel -o example.json
+```
 
 ```
   xelconsole -i <input-file-name> -o <output-file-name>
@@ -30,18 +33,23 @@ https://github.com/matiasdieguez/xelconsole/releases
 
 - .NET 5 SDK https://dotnet.microsoft.com/download/dotnet/5.0
 
-## Windows
+## CLI
+```
+dotnet build
+```
+
+## Publish for Windows
 
 ```
 dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true -o windows
 ```
 
-## Linux
+## Publish for Linux
 ```
 dotnet publish -r linux-x64 -c Release /p:PublishSingleFile=true -o linux
 ```
 
-## macOS
+## Publish for macOS
 
 ```
 dotnet publish -r osx-x64 -c Release /p:PublishSingleFile=true -o osx
