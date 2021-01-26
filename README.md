@@ -5,6 +5,9 @@ Converts XEL files to json, html or txt formats to simplify cross-platform viewi
 
 ![.NET](https://github.com/matiasdieguez/xelconsole/workflows/.NET/badge.svg)
 
+## Download release binaries
+https://github.com/matiasdieguez/xelconsole/releases
+
 # Usage
 ```
   xelconsole -i example.xel -o example.json
